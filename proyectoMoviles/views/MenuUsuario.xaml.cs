@@ -24,7 +24,7 @@ namespace proyectoMoviles.views
 
         private void btnSupereroes_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new ListadoMarvel());
         }
     }
 }
