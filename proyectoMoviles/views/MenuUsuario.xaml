@@ -12,7 +12,5 @@
             <Button x:Name="btnPerfil" Text="Perfil" HeightRequest="100" WidthRequest="100" Clicked="btnPerfil_Clicked"/>
             <Button x:Name="btnSupereroes" Text="Superheroes" HeightRequest="100" WidthRequest="100" Clicked="btnSupereroes_Clicked"/>
         </StackLayout>
-
-
     </ContentPage.Content>
 </ContentPage>
