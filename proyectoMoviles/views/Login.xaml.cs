@@ -42,8 +42,7 @@ namespace proyectoMoviles.views
                 IEnumerable<Persona> resultado = Select_where(db, txtUsuario.Text, txtContrasena.Text);
                 if (resultado.Count() > 0)
                 {
-                    //Navigation.PushAsync(new ConsultaRegistro());
-                    DisplayAlert("Alerta", "Ingresa", "Cerrar");
+                    Navigation.PushAsync(new MenuUsuario());
                 }
                 else
                 {
