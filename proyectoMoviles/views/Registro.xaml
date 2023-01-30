@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoMoviles.views.Registro">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness"
+                  iOS="40,40,40,40"
+                  Android="40,40,40,40" />
+            </StackLayout.Padding>
+            <Label Text="REGISTRO" TextColor="Black" HorizontalTextAlignment="Center" FontSize="40"></Label>
+            <Image Source="marvel3.png" WidthRequest="100"></Image>
+            <Entry x:Name="txtNombres" Placeholder="Nombres" />
+            <Entry x:Name="txtApellidos" Placeholder="Apellidos"/>
+            <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric" />
+            <Entry x:Name="txtCorreo" Placeholder="Correo" />
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" />
+            <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" />
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+            <Button x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
