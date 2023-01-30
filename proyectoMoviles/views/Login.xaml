@@ -3,8 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyectoMoviles.views.Login">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenid@" FontSize="20"  />
+        <StackLayout VerticalOptions="Center">
+            <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness"
+                  iOS="40,40,40,40"
+                  Android="40,40,40,40" />
+            </StackLayout.Padding>
+            <Image Source="login.png"></Image>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" />
+            <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" />
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+            <Button x:Name="btnRegistro" Text="Registrarse" Clicked="btnRegistro_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
