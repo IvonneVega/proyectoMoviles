@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -92,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\proyectoMoviles\proyectoMoviles.csproj">
-      <Project>{3AD5F417-A959-450C-A29E-79224736596B}</Project>
+      <Project>{22ABB218-F41B-4F3C-BB07-575F9114CCB3}</Project>
       <Name>proyectoMoviles</Name>
     </ProjectReference>
   </ItemGroup>
