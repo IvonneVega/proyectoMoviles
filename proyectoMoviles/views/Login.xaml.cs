@@ -42,7 +42,9 @@ namespace proyectoMoviles.views
                 IEnumerable<Persona> resultado = Select_where(db, txtUsuario.Text, txtContrasena.Text);
                 if (resultado.Count() > 0)
                 {
-                    Navigation.PushAsync(new MenuUsuario());
+                    Persona persona = resultado.FirstOrDefault();
+
+                    Navigation.PushAsync(new MenuUsuario(persona.Id));
                 }
                 else
                 {
