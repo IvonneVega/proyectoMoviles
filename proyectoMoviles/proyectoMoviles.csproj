@@ -31,5 +31,6 @@
   <ItemGroup>
     <None Remove="SQLitePCLRaw.core" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Marvel.Api" />
   </ItemGroup>
 </Project>

@@ -5,17 +5,28 @@
     x:Class="proyectoMoviles.views.ListadoMarvel">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Llamado Api" Clicked="Button_Clicked"></Button>
-            <ListView x:Name="ListDemo">
+          <Button Text="Listar" Clicked="Button_Clicked"></Button>
 
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding resourceURI}" Detail = "{Binding name}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            
-        </StackLayout>
+     <ListView  x:Name="ListDemo">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding thumbnail.imagen}" />
+                                <Label Text="{Binding name}"
+                                TextColor="Black" />
+                                <Label Text="{Binding id}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="Blue" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 
