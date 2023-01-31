@@ -13,7 +13,7 @@
             <ViewCell>
                 <Grid>
                     
-                    <Image Source="{Binding thumbnail.imagen}"/>
+                    <ImageButton Source="{Binding thumbnail.imagen}" Clicked="ImageButton_Clicked" />
                     
                     <Label Text="{Binding name}"/>
                 </Grid>
