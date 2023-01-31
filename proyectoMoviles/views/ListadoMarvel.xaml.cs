@@ -20,7 +20,7 @@ namespace proyectoMoviles.views
         }
 
 
-        private async void Button_Clicked(System.Object sender, System.EventArgs e)
+        public async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri("https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=ef0032a6dc394ad08a9a92d945c18298&hash=bed1f6d38c9a8e4c317e237f3c5f1cd1");
@@ -54,8 +54,21 @@ namespace proyectoMoviles.views
             }          
         }
 
-        void ImageButton_Clicked(System.Object sender, System.EventArgs e)
+        public async void ImageButton_Clicked(System.Object sender, System.EventArgs e)
         {
+
+            DisplayAlert("Alerta","", "");
+
+
+
+
+
+            }
+
+
+
+            
+
         }
     }
 }
